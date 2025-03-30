@@ -1,5 +1,5 @@
-# a-m-kinetics
-A novel whatever kinetics model
+#Protease kinetics as weighted sums of continued fraction of linear dynamics
+
 Data for the following analysis is obtained from [here](https://github.com/avaamini/protease_activity_analysis/tree/master/data/stm_kinetic).
 
 The pickle files for each protease is created with the following code
