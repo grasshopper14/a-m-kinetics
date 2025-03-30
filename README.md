@@ -1,4 +1,4 @@
-#Protease kinetics as weighted sums of continued fraction of linear dynamics
+## Protease kinetics as weighted sums of continued fraction of linear dynamics
 
 Data for the following analysis is obtained from [here](https://github.com/avaamini/protease_activity_analysis/tree/master/data/stm_kinetic).
 
