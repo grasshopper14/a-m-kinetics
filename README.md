@@ -46,4 +46,4 @@ yfit,params = sup_fit(xdata,ydata,num_of_origins)
 This way we have fit various growth data:  
 [A biological growth curve is a sum of two distinct S-curves](https://www.biorxiv.org/content/10.1101/2025.02.06.636984v2)  
 [Modeling Montbeillard’s height data of a human male](https://www.biorxiv.org/content/10.1101/2025.03.02.641023v1)  
-We have also compared number of origins with a bacterial growth data [here](https://www.biorxiv.org/content/10.1101/2025.01.27.634991v2).
+We have also compared models with different number of origins using a bacterial growth data [here](https://www.biorxiv.org/content/10.1101/2025.01.27.634991v2).
