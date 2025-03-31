@@ -22,9 +22,11 @@ for i in range(fc.shape[0]):
     y = np.array(fc.iloc[i])
     yeval[i],params = sup_fit(x,y,num_of_origins)
     paramss.append(params)
-with open('ypars_PRSS8','wb') as handle:
+#yeval is the fitted curve
+with open('ypars_MMP13','wb') as handle:
     pickle.dump([yeval,paramss],handle,protocol=pickle.HIGHEST_PROTOCOL)
 ```
+
 The pickle files are then read as
 ```rb
 with open('ypars_MMP13', 'rb') as handle:
