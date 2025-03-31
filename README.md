@@ -37,7 +37,7 @@ yeval = out[0];pars = out[1]
 for j in pars:
         m_list.append(np.max(fnder(x,j)))
         a_list.append(j['a'])
-#m_list and a_list are later saved into avals.csv and mvals.csv respectively.
+#m_list and a_list are later saved into mvals.csv and avals.csv respectively.
 ```
 One can als fit any other data using 
 ```rb
