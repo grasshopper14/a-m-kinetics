@@ -1,4 +1,9 @@
-## Protease kinetics as weighted sums of continued fraction of linear dynamics
+## Protease kinetics as weighted sums of continued fraction of linear dynamics  
+
+### The model is explained here in this [preprint](https://chemrxiv.org/engage/chemrxiv/article-details/67ef642bfa469535b9adb5d7): Analyzing enzyme kinetics using a growth model
+
+### Abstract  
+Dynamics of population growth or enzyme kinetics do not follow a constant rate making them difficult to quantify. Therefore, a single measure of dynamics is desired to profile the kinetic activities of enzymes with respect to various substrates. In this work, we use a growth model to model enzyme kinetics and provide a measure for kinetic activity based on the model parameters. This growth model, named the a − m model, has been fitted on nonlinear growth data of populations including bacterial colonies and longitudinal growth data of a human male. We apply the a − m growth model to fit and interpret the publicly available protease kinetic data provided by the developers of the protease activity analysis(PAA) toolkit. The results are summarized and interpreted using a growth coordinate system on an xy− plane.  
 
 Data for the following analysis is obtained from [here](https://github.com/avaamini/protease_activity_analysis/tree/master/data/stm_kinetic).
 
@@ -8,7 +13,7 @@ import pandas as pd
 import numpy as np
 from gen_curve_fitting import sup_fit,fn_c
 import pickle
-
+#We consider the mean of replicates
 in_path = '/root/my-documents/protease_activity_analysis/data/stm_kinetic/MMP13_stm.xlsx'
 raw = pd.read_excel(in_path, engine='openpyxl')
 raw_mean=raw.groupby(raw.columns[0]).agg([np.mean])
