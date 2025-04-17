@@ -14,7 +14,7 @@ def fnder(x,params):
     
 def origins(x,y,ams):
     grads=(y[1:]-y[:-1])/(x[1:]-x[:-1])
-    mxpts = np.argpartition(np.abs(grads),-ams-1)[-ams-1:]
+    mxpts = np.argsort(np.abs(grads))[-ams-1:][::-1]
     xl = np.empty(ams+1)
     yl = np.empty(ams+1)
     for i in np.arange(len(mxpts)):
